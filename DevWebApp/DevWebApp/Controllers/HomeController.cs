@@ -10,7 +10,7 @@ using DevWebApp.Models;
 namespace DevWebApp.Controllers
 {
     public class HomeController : Controller
-    {
+    {// test comments
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
