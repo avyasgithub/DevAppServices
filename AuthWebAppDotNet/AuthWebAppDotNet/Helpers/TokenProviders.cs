@@ -7,7 +7,7 @@ using Microsoft.Identity.Client;
 using System.Threading.Tasks;
 using System.Configuration;
 using AuthWebAppDotNet.Helpers;
-using HelperClasses;
+
 
 namespace AuthWebAppDotNet.Helpers
 {

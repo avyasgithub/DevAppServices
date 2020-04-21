@@ -14,7 +14,7 @@ using System.Security.Claims;
 using Microsoft.Owin.Security.Infrastructure;
 using Microsoft.Identity.Client;
 using AuthWebAppDotNet.Helpers;
-using HelperClasses;
+
 
 namespace AuthWebAppDotNet
 {

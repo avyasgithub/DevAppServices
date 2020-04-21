@@ -121,5 +121,3 @@ D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\Sys
 D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\System.Memory.xml
 D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\System.Numerics.Vectors.xml
 D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\System.Runtime.CompilerServices.Unsafe.xml
-D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\HelperClasses.dll
-D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\AuthWebAppDotNet\bin\HelperClasses.pdb
