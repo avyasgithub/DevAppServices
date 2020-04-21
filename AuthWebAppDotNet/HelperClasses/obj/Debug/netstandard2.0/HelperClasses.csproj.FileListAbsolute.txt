@@ -1,0 +1,8 @@
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\bin\Debug\netstandard2.0\HelperClasses.deps.json
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\bin\Debug\netstandard2.0\HelperClasses.dll
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\bin\Debug\netstandard2.0\HelperClasses.pdb
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\obj\Debug\netstandard2.0\HelperClasses.csprojAssemblyReference.cache
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\obj\Debug\netstandard2.0\HelperClasses.AssemblyInfoInputs.cache
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\obj\Debug\netstandard2.0\HelperClasses.AssemblyInfo.cs
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\obj\Debug\netstandard2.0\HelperClasses.dll
+D:\Ajay\Projects\WebApp\DevAppServices\AuthWebAppDotNet\HelperClasses\obj\Debug\netstandard2.0\HelperClasses.pdb
