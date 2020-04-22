@@ -232,6 +232,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CustomAuthorizeAttribute.cs" />
     <Compile Include="Helpers\RolesProvider.cs" />
     <Compile Include="Helpers\TokenProviders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -275,7 +276,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Claims.cshtml" />
-    <Content Include="Views\Home\SecuredPage.cshtml" />
+    <Content Include="Views\Home\MyPage.cshtml" />
+    <Content Include="Views\Home\AccessDenied.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

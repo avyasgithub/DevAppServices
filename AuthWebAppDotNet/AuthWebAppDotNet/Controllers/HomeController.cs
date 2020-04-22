@@ -6,6 +6,9 @@ using System.Web.Mvc;
 using System.Security.Claims;
 using AuthWebAppDotNet.Helpers;
 using System.Threading.Tasks;
+using Microsoft.Owin.Security;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using AuthorizationContext = System.Web.Mvc.AuthorizationContext;
 
 namespace AuthWebAppDotNet.Controllers
 {
@@ -18,7 +21,7 @@ namespace AuthWebAppDotNet.Controllers
             return View();
         }
 
-        [Authorize(Roles ="Admin")]
+        [CustomAuthorize(Roles ="Admin")]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -26,7 +29,7 @@ namespace AuthWebAppDotNet.Controllers
             return View();
         }
         
-        [Authorize(Roles = "Developer")]
+        [CustomAuthorize(Roles = "Developer")]
         
         public  ActionResult Contact()
         {
@@ -37,7 +40,7 @@ namespace AuthWebAppDotNet.Controllers
             return View();
         }
         // You can use the PolicyAuthorize decorator to execute a certain policy if the user is not already signed into the app.
-        [Authorize(Roles = "Admin,Developer")]
+        [CustomAuthorize(Roles = "Admin,Developer")]
         public ActionResult Claims()
         {
            
@@ -47,10 +50,10 @@ namespace AuthWebAppDotNet.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
-        public ActionResult SecuredPage()
+        [CustomAuthorize(Roles = "Admin")]
+        public ActionResult MyPage()
         {
-            ViewBag.DisplayName = "This is secured page only admin can access";
+            ViewBag.Message = "This is secured page only admin can access";
             return View();
         }
         public ActionResult Error(string message)
@@ -58,6 +61,12 @@ namespace AuthWebAppDotNet.Controllers
             ViewBag.Message = message;
 
             return View("Error");
+        }
+        public ActionResult AccessDenied()
+        {
+            ViewBag.Message = "Access Denied";
+
+            return View();
         }
 
     }

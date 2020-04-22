@@ -14,7 +14,7 @@ using System.Security.Claims;
 using Microsoft.Owin.Security.Infrastructure;
 using Microsoft.Identity.Client;
 using AuthWebAppDotNet.Helpers;
-
+using Microsoft.Owin;
 
 namespace AuthWebAppDotNet
 {
@@ -37,16 +37,23 @@ namespace AuthWebAppDotNet
         {
             app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
 
+
+            //CookieAuthenticationOptions cao = new CookieAuthenticationOptions();
+            //cao.AuthenticationType = CookieAuthenticationDefaults.CookiePrefix + CookieAuthenticationDefaults.AuthenticationType;
+            //cao.LoginPath = new PathString("/Home/AccessDenied");
+
             app.UseCookieAuthentication(new CookieAuthenticationOptions());
 
             // Configure OpenID Connect middleware for each policy
             app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(PasswordResetPolicyId));
-            app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SusiPolicyId));
             app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(EditProfile));
+            app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SusiPolicyId));
             
-           
-           
-        
+
+
+
+
+
         }
 
         // Used for avoiding yellow-screen-of-death TODO
